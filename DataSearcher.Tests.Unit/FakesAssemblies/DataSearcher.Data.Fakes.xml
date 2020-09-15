@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataSearcher.Data.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:DataSearcher.Data.Fakes.ShimPeopleDatabaseSearcher">
+            <summary>Shim type of DataSearcher.Data.PeopleDatabaseSearcher</summary>
+        </member>
+        <member name="M:DataSearcher.Data.Fakes.ShimPeopleDatabaseSearcher.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DataSearcher.Data.Fakes.ShimPeopleDatabaseSearcher.#ctor(DataSearcher.Data.PeopleDatabaseSearcher)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DataSearcher.Data.Fakes.ShimPeopleDatabaseSearcher.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DataSearcher.Data.Fakes.ShimPeopleDatabaseSearcher.AllInstances.GetAllPeople">
+            <summary>Sets the shim of PeopleDatabaseSearcher.GetAllPeople()</summary>
+        </member>
+        <member name="M:DataSearcher.Data.Fakes.ShimPeopleDatabaseSearcher.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DataSearcher.Data.Fakes.ShimPeopleDatabaseSearcher.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DataSearcher.Data.Fakes.ShimPeopleDatabaseSearcher.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DataSearcher.Data.Fakes.ShimPeopleDatabaseSearcher.Bind(DataSearcher.Data.IPeopleDatabaseSearcher)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DataSearcher.Data.Fakes.ShimPeopleDatabaseSearcher.Constructor">
+            <summary>Sets the shim of PeopleDatabaseSearcher.PeopleDatabaseSearcher()</summary>
+        </member>
+        <member name="P:DataSearcher.Data.Fakes.ShimPeopleDatabaseSearcher.GetAllPeople">
+            <summary>Sets the shim of PeopleDatabaseSearcher.GetAllPeople()</summary>
+        </member>
+        <member name="P:DataSearcher.Data.Fakes.ShimPeopleDatabaseSearcher.StaticConstructor">
+            <summary>Sets the shim of PeopleDatabaseSearcher.PeopleDatabaseSearcher()</summary>
+        </member>
+        <member name="P:DataSearcher.Data.Fakes.ShimPeopleDatabaseSearcher._GetAllPeopleb__0DbDataRecord">
+            <summary>Sets the shim of PeopleDatabaseSearcher.&lt;GetAllPeople&gt;b__0(DbDataRecord result)</summary>
+        </member>
+        <member name="T:DataSearcher.Data.Fakes.StubIPeopleDatabaseSearcher">
+            <summary>Stub type of DataSearcher.Data.IPeopleDatabaseSearcher</summary>
+        </member>
+        <member name="M:DataSearcher.Data.Fakes.StubIPeopleDatabaseSearcher.#ctor">
+            <summary>Initializes a new instance of type StubIPeopleDatabaseSearcher</summary>
+        </member>
+        <member name="M:DataSearcher.Data.Fakes.StubIPeopleDatabaseSearcher.DataSearcher#Data#IPeopleDatabaseSearcher#GetAllPeople">
+            <summary>Sets the stub of IPeopleDatabaseSearcher.GetAllPeople()</summary>
+        </member>
+        <member name="F:DataSearcher.Data.Fakes.StubIPeopleDatabaseSearcher.GetAllPeople">
+            <summary>Sets the stub of IPeopleDatabaseSearcher.GetAllPeople()</summary>
+        </member>
+        <member name="T:DataSearcher.Data.Fakes.StubPeopleDatabaseSearcher">
+            <summary>Stub type of DataSearcher.Data.PeopleDatabaseSearcher</summary>
+        </member>
+        <member name="M:DataSearcher.Data.Fakes.StubPeopleDatabaseSearcher.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DataSearcher.Data.Fakes.StubPeopleDatabaseSearcher.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DataSearcher.Data.Fakes.StubPeopleDatabaseSearcher.InitializeStub">
+            <summary>Initializes a new instance of type StubPeopleDatabaseSearcher</summary>
+        </member>
+        <member name="P:DataSearcher.Data.Fakes.StubPeopleDatabaseSearcher.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DataSearcher.Data.Fakes.StubPeopleDatabaseSearcher.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>
