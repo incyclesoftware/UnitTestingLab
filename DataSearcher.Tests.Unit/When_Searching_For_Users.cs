@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using DataSearcher.Data;
 using DataSearcher.Model;
-using Microsoft.QualityTools.Testing.Fakes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DataSearcher.Tests.Unit
