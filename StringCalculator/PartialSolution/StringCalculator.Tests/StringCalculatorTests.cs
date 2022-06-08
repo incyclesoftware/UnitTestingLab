@@ -7,7 +7,7 @@ namespace StringCalculator.Tests
     public class StringCalculatorTests
     {
         [TestMethod]
-        public void Add_ShouldReturn0_When_StringEmpty()
+        public void Add_StringEmpty_Returns0()
         {
             var result = StringCalculator.Add(string.Empty);
 
@@ -15,7 +15,7 @@ namespace StringCalculator.Tests
         }
 
         [TestMethod]
-        public void Add_ShouldReturn2_When_1_1()
+        public void Add_NumbersSeparatedWithCommas_ReturnsSum()
         {
             var result = StringCalculator.Add("1,1");
 
@@ -23,7 +23,7 @@ namespace StringCalculator.Tests
         }
 
         [TestMethod]
-        public void Add_ShouldReturn2_When_2()
+        public void Add_SingleNumer_ReturnsNumber()
         {
             var result = StringCalculator.Add("2");
 
@@ -31,7 +31,7 @@ namespace StringCalculator.Tests
         }
 
         [TestMethod]
-        public void Add_ShouldReturn25_When_5_5_5_5_5()
+        public void Add_FiveNumbersWithCommasAndSpaces_ReturnsSum()
         {
             var result = StringCalculator.Add("5, 5, 5, 5, 5");
 
@@ -39,7 +39,7 @@ namespace StringCalculator.Tests
         }
 
         [TestMethod]
-        public void Add_ShouldReturn25_When_5_5_5_5()
+        public void Add_5_5_5_5_Returns20()
         {
             var result = StringCalculator.Add("5, 5, 5, 5");
 
@@ -47,7 +47,7 @@ namespace StringCalculator.Tests
         }
 
         [TestMethod]
-        public void Add_ShouldReturn2_When_1_1_with_new_lines()
+        public void Add_NumbersSeparatedByNewLines_ReturnsSum()
         {
             var result = StringCalculator.Add("1\n1");
 
@@ -55,7 +55,7 @@ namespace StringCalculator.Tests
         }
 
         [TestMethod]
-        public void Add_ShouldReturn5_When_1_2_2_with_different_separators()
+        public void Add_MultipleSeparetors_ReturnsSum()
         {
             var result = StringCalculator.Add("1\n2, 2");
 
@@ -63,13 +63,13 @@ namespace StringCalculator.Tests
         }
 
         [TestMethod]
-        public void Add_Should_Fail_When_End_with_2_Separators()
+        public void Add_EndWith2Separators_ThrowsFormatException()
         {
             Assert.ThrowsException<FormatException>(() => StringCalculator.Add("1,\n"));
         }
 
         [TestMethod]
-        public void Add_Should_Sum_When_Custom_Separator_Specified()
+        public void Add_CustomSeparatorSpecified_ReturnsSum()
         {
             var result = StringCalculator.Add("//;\n1;2");
 
@@ -77,7 +77,7 @@ namespace StringCalculator.Tests
         }
 
         [TestMethod]
-        public void Add_Should_Fail_When_Negative_Numbers()
+        public void Add_NegativeNumbers_FailAndBadNumbersPartOfExceptionMessage()
         {
             ArgumentException exception = Assert.ThrowsException<ArgumentException>(() => StringCalculator.Add("1,-4"));
 
@@ -89,11 +89,13 @@ namespace StringCalculator.Tests
         }
 
         [TestMethod]
-        public void Add_Should_Ignore_Number_Greater_Than_1000()
+        public void Add_NumberGreaterThan1000_ReturnSumIgnoringThousands()
         {
             var result = StringCalculator.Add("1,1000");
 
             Assert.AreEqual(1, result);
         }
+
+        
     }
 }

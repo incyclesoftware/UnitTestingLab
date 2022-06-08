@@ -30,7 +30,7 @@ namespace StringCalculator
                     if (numberInt < 1000)
                         sum += numberInt;
                 }
-
+                
                 return sum;
             }
 
